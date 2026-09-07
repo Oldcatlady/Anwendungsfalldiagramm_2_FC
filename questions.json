@@ -1,0 +1,98 @@
+[
+{
+  "question": "Welche Bedeutung hat eine Vererbung zwischen Use Cases?",
+  "answer": "Ein spezialisierter Use Case übernimmt den Ablauf des allgemeinen Use Case und kann ihn abwandeln/ergänzen."
+},
+{
+  "question": "Wie wird eine Vererbung in einem UML-Diagramm dargestellt?",
+  "answer": "Als durchgezogene Linie mit einem nicht ausgefüllten (offenen) Dreieck als Pfeilspitze, die zum Allgemeineren zeigt."
+},
+{
+  "question": "Was ist eine Include-Beziehung?",
+  "answer": "Eine Beziehung, bei der ein Use Case einen anderen Use Case zwingend einbindet, um vollständig zu sein."
+},
+{
+  "question": "Wann wird eine Include-Beziehung verwendet?",
+  "answer": "Wenn ein Teilablauf (Use Case) immer bei der Ausführung eines anderen Use Case benötigt wird, z.B. wiederverwendbare Funktionalität."
+},
+{
+  "question": "Welche Bedeutung hat eine Include-Beziehung zwischen zwei Use Cases?",
+  "answer": "Der einbindende Use Case kann ohne den eingebundenen Use Case nicht vollständig ablaufen – er wird immer ausgeführt."
+},
+{
+  "question": "Wie wird eine Include-Beziehung grafisch dargestellt?",
+  "answer": "Als gestrichelte Linie mit offener Pfeilspitze und dem Stereotyp <<include>>."
+},
+{
+  "question": "In welche Richtung zeigt der Pfeil bei einer Include-Beziehung?",
+  "answer": "Vom einbindenden (Basis-)Use Case zum eingebundenen Use Case."
+},
+{
+  "question": "Was bedeutet es, wenn ein Use Case einen anderen Use Case mittels <<include>> einbindet?",
+  "answer": "Dass der eingebundene Use Case bei jeder Ausführung des Basis-Use-Case verpflichtend mit durchlaufen wird."
+},
+{
+  "question": "Was ist eine Extend-Beziehung?",
+  "answer": "Eine Beziehung, bei der ein Use Case einen anderen optional erweitert, abhängig von einer Bedingung."
+},
+{
+  "question": "Wann wird eine Extend-Beziehung verwendet?",
+  "answer": "Wenn eine Zusatzfunktion nur unter bestimmten Bedingungen optional ausgeführt wird."
+},
+{
+  "question": "Welche Bedeutung hat eine Extend-Beziehung zwischen zwei Use Cases?",
+  "answer": "Der erweiternde Use Case wird nur ausgeführt, wenn die zugehörige Bedingung an einem definierten Extension Point erfüllt ist."
+},
+{
+  "question": "Wie wird eine Extend-Beziehung grafisch dargestellt?",
+  "answer": "Als gestrichelte Linie mit offener Pfeilspitze und dem Stereotyp <<extend>>."
+},
+{
+  "question": "In welche Richtung zeigt der Pfeil bei einer Extend-Beziehung?",
+  "answer": "Vom erweiternden Use Case zum Basis-Use-Case (der erweitert wird)."
+},
+{
+  "question": "Was bedeutet es, wenn ein Use Case einen anderen Use Case mittels <<extend>> erweitert?",
+  "answer": "Dass er den Basis-Use-Case nur optional, unter einer bestimmten Bedingung, um zusätzliches Verhalten ergänzt."
+},
+{
+  "question": "Was ist ein Extension Point?",
+  "answer": "Eine benannte Stelle im Basis-Use-Case, an der ein erweiternder Use Case eingefügt werden kann."
+},
+{
+  "question": "Welche Funktion hat ein Extension Point bei einer Extend-Beziehung?",
+  "answer": "Er markiert die genaue Stelle im Ablauf des Basis-Use-Case, an der die Erweiterung stattfindet."
+},
+{
+  "question": "Wo wird ein Extension Point innerhalb eines Use Cases angegeben?",
+  "answer": "In einem eigenen Bereich (Compartment) innerhalb der Use-Case-Ellipse bzw. in der Beschreibung des Use Case."
+},
+{
+  "question": "Was beschreibt eine Condition bei einer Extend-Beziehung?",
+  "answer": "Die Bedingung, die erfüllt sein muss, damit der erweiternde Use Case tatsächlich ausgeführt wird."
+},
+{
+  "question": "Welche Beziehung besteht zwischen einer Condition und einem Extension Point?",
+  "answer": "Ist die Condition am Extension Point erfüllt, wird der erweiternde Use Case an dieser Stelle eingefügt."
+},
+{
+  "question": "Warum wird bei einer Extend-Beziehung eine Bedingung benötigt?",
+  "answer": "Weil die Erweiterung – anders als bei Include – nur optional stattfindet und daher ausgelöst werden muss."
+},
+{
+  "question": "Was ist der Unterschied zwischen <<include>> und <<extend>>?",
+  "answer": "Include ist eine verpflichtende Einbindung (immer ausgeführt), Extend ist eine optionale, bedingte Erweiterung."
+},
+{
+  "question": "Was ist der Unterschied zwischen einer Assoziation und einer Vererbung?",
+  "answer": "Assoziation beschreibt eine Kommunikationsbeziehung (Akteur–Use Case), Vererbung beschreibt eine Spezialisierung/Generalisierung zwischen gleichartigen Elementen."
+},
+{
+  "question": "Was ist der Unterschied zwischen einer Assoziation und einer Include-Beziehung?",
+  "answer": "Assoziation verbindet Akteur und Use Case; Include verbindet zwei Use Cases miteinander und bedeutet zwingende Einbindung."
+},
+{
+  "question": "Was ist der Unterschied zwischen einer Include-Beziehung und einer Extend-Beziehung?",
+  "answer": "Include ist obligatorisch und wird immer ausgeführt, Extend ist optional und nur bei erfüllter Bedingung."
+}
+]
